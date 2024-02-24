@@ -8,29 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
 .ProseMirror {
   padding: 10px;
   background: transparent;
@@ -38,12 +15,11 @@ body {
   min-height: 100px;
 }
 
-
 .ProseMirror > * + * {
   margin-top: 0.75em;
 }
 
-.ProseMirror ul{
+.ProseMirror ul {
   padding: 0 1rem;
   list-style: disc !important;
 }
@@ -69,7 +45,7 @@ body {
 .ProseMirror pre {
   background: #0d0d0d;
   color: #fff;
-  font-family: "JetBrainsMono", monospace;
+  font-family: 'JetBrainsMono', monospace;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
 }
@@ -79,7 +55,6 @@ body {
   background: none;
   font-size: 0.8rem;
 }
-
 
 .ProseMirror blockquote {
   padding-left: 1rem;
@@ -91,7 +66,6 @@ body {
   border-top: 3px solid #999999;
   margin: 2rem 0;
 }
-
 
 .heading3 {
   font-size: 15px;
